@@ -28,6 +28,19 @@
 		text-align: center;
 		margin-top: 100px;
 	}
+	.logos div {
+		width: 200px;
+		height: 200px;
+		display: inline-block;
+		background-size: cover;
+		background-repeat: none;
+	}
+	.logos .object {
+		background-image: url(/images/object_logo.png);
+	}
+	.logos .adc {
+		background-image: url(/images/adc_logo.svg);
+	}
   </style>
 </head>
 
@@ -36,9 +49,9 @@
 	  <h1>Object.com.au has moved to Australiandesigncentre.com</h1>
 
 	  <div class="logos">
-		<div style="background-image: url(/images/object_logo.png); width:200px;height:200px;background-size:cover;display:inline-block;" ></div>
-		<div class="glyphicon glyphicon-arrow-right arrow" style="width:200px;height:200px;display:inline-block;background-size:cover;"></div>
-		<div style="background-image: url(/images/adc_logo.svg); width: 200px; height: 200px; background-size:cover;display:inline-block"></div> 
+		<div class="object" ></div>
+		<div class="glyphicon glyphicon-arrow-right arrow"></div>
+		<div class="adc"></div> 
 	  </div>
 	  
 	  <p>You will be redirected in a few seconds. If that doesn't
@@ -48,8 +61,7 @@
   <script type="text/javascript">
  function autorun()
    {
-         //setTimeout(redirect, 5000);
-    
+         setTimeout(redirect, 5000);
    }
    function redirect(){
      window.location = "https://australiandesigncentre.com";
